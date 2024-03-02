@@ -2,7 +2,7 @@
 templateKey: bio-page
 thumbnail: /img/clay-image-1.jpg
 date: 2023-03-02T10:17:05.133Z
-title: Bio
+title: About
 description: A stunning Gatsby theme designed for captivating image-centric websites, perfect for photographers, portfolios, and more.
 number: 1
 pagetype:

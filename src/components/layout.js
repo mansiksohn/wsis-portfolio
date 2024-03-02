@@ -4,7 +4,7 @@ import { useLocation } from '@reach/router';
 
 const Layout = props => {
   const data = useLocation()
-  const { title, children, social } = props
+  const { title, children } = props
   // const path = props&&props.location&&props.location
 
   const [toggleNav, setToggleNav] = React.useState(false)
@@ -12,6 +12,20 @@ const Layout = props => {
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
         <div className="site-head-container">
+          
+        <button
+          className="nav-burger"
+          onClick={() => setToggleNav(!toggleNav)}
+          aria-label="Menu"
+        >
+          <div className="hamburger hamburger--collapse">
+            <div className="hamburger-box">
+              <div className="hamburger-inner" />
+            </div>
+          </div>
+        </button>
+
+          {/*
           <a
             className="nav-burger"
             href={`#`}
@@ -28,64 +42,32 @@ const Layout = props => {
               </div>
             </div>
           </a>
+          */}
+          
           <nav id="swup" className="site-head-left">
-            <ul className="nav" role="menu">
-              <li className={`nav-home  ${data.pathname === '/' ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li>
-              <li className={`nav-home  ${data.pathname.includes('/bio') ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/bio`}>Bio</Link>
-              </li>
-              <li className={`nav-home  ${data.pathname.includes('/work') ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/work`}>Work</Link>
-              </li>
-              <li className={`nav-home  ${data.pathname.includes('/news') ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/news`}>News</Link>
-              </li>
-              <li className={`nav-home  ${data.pathname.includes('/contact') ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/contact`}>Contact</Link>
-              </li>
-              <li className={`nav-home  ${data.pathname.includes('/elements') ? 'nav-current' : ""} `} role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
-            </ul>
+            {/* 왼쪽에 로고 이미지 커스텀 */}
+            <Link className="site-head-logo" to={`/`}>
+              <img src="/img/wsis-logo.png" alt="Logo" /> {/* 로고 이미지 */}
+            </Link>
           </nav>
           <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
+
           </div>
           <div className="site-head-right">
-            <div className="social-links">
-              <Link
-                to={`https://facebook.com/${social.facebook}`}
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-              <Link
-                to={`https://instagram.com/${social.twitter}`}
-                title="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </Link>
-
-              
-              <Link
-                to={`https://github.com/lilxyzz/gatsby-clay`}
-                title="Github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </Link>
-
-              
-            </div>
+            <ul className="nav">
+                <li className={`nav-home  ${data.pathname === '/' ? 'nav-current' : ""} `}>
+                  <Link to={`/`}>Home</Link>
+                </li>
+                <li className={`nav-home  ${data.pathname.includes('/work') ? 'nav-current' : ""} `}>
+                  <Link to={`/work`}>Work</Link>
+                </li>
+                <li className={`nav-home  ${data.pathname.includes('/news') ? 'nav-current' : ""} `}>
+                  <Link to={`/news`}>Blog</Link>
+                </li>
+                <li className={`nav-home  ${data.pathname.includes('/bio') ? 'nav-current' : ""} `}>
+                  <Link to={`/bio`}>About</Link>
+                </li>
+              </ul>
           </div>
         </div>
       </header>

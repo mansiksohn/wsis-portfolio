@@ -5,11 +5,11 @@ const siteConfig = require("./siteConfig")
 
 module.exports = {
   siteMetadata: {
-    title: siteConfig.name,
+    title: siteConfig.shortName,
     author: siteConfig.author,
     description: siteConfig.description,
     image: siteConfig.image,
-    siteUrl: "https://clay-gatsby.netlify.app/",
+    siteUrl: "https://wsis.design/",
     social: {
       twitter: siteConfig.twitter,
       facebook: siteConfig.facebook,
@@ -134,7 +134,7 @@ module.exports = {
         short_name: siteConfig.shortName,
         start_url: siteConfig.prefix,
         background_color: `#ffffff`,
-        theme_color: `#ffffff`,
+        theme_color: `#4e0899`,
         display: `standalone`,
         resolve: `gatsby-plugin-manifest`,
         icon: siteConfig.manifest_icon,

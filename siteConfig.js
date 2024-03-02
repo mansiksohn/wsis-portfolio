@@ -1,16 +1,15 @@
 const siteConfig = {
-  name: 'Clay',
-  shortName: 'Clay',
-  description: 'Clay - Personal Gatsby Theme',
-  url: '/', // Domain of your site without prefix!
+  name: 'What Should I Say?',
+  shortName: 'WSIS',
+  description: 'Conversational Product Designer Mansiksohn',
+  url: 'https://wsis.design//', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Travis Lord & Abdul Waqar',
-  twitter: '' ,
+  author: 'MansikSohn',
+  twitter: '',
   facebook:'',
   github:'',
-  manifest_icon:`src/img/vase.png`,
-  image:`/vase.png`
-
+  manifest_icon:`src/img/wsis.png`,
+  image:`/wsis.png`
 }
 
 module.exports = siteConfig

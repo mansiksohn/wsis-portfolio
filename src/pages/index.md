@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
-title: Clay Gatsby Theme 
-image: /img/clay-images-7.jpg
-description: A stunning Gatsby theme designed for captivating image-centric websites, perfect for photographers, portfolios, and blogs.
-thumbnail: /img/clay-images-7.jpg
+title: What Whould I Say?
+image: /img/wsis-logo.png
+description: Conversational Product Designer Mansiksohn's portfolios, and blogs.
+thumbnail: /img/wsis-logo.png
 heading: Main Heading
-subheading: Sub HEading
-featuredimage: /img/clay-images-7.jpg
+subheading: Sub Heading
+featuredimage: /img/wsis-logo.png
 ---

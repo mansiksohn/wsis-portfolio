@@ -6,13 +6,19 @@ table {
     margin: 0 0 var(--margin) 0;
     width: 100%;
     font-size: 0.8em;
+
+    /* 둥근 모서리 테이블 커스터마이징 */
+    border-collapse: collapse;
+    border-radius: var(--radius);
+    border-style: hidden;
+    box-shadow: 0 0 0 1px var(--color-border);
 }
 
 th {
     color: var(--color-base);
     font-size: 0.9em;
     font-weight: var(--font-bold);
-    padding: 0 0.7em 0.4em 0.7em;
+    padding: 0.3em 0.7em 0.4em 0.7em;
     text-align: left;
 }
 
