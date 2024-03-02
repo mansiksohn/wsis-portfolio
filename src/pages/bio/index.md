@@ -1,22 +1,42 @@
 ---
 templateKey: bio-page
-thumbnail: /img/clay-image-1.jpg
+thumbnail: /img/wsis-logo.png
 date: 2023-03-02T10:17:05.133Z
 title: About
-description: A stunning Gatsby theme designed for captivating image-centric websites, perfect for photographers, portfolios, and more.
-number: 1
+description: Conversational Product Designer Mansiksohn's portfolios, and blogs.
+number: 3
 pagetype:
   - main
-featuredimage: /img/clay-image-1.jpg
+featuredimage: /img/wsis-logo.png
 ---
-![clay-images-11](/img/clay-images-11.jpg)
 
-![clay-images-12](/img/clay-images-12.jpg)
+프로덕트 디자이너 MansikSohn입니다.
+대화경험을 디자인해온 프로덕트 디자이너입니다. 2012년, 기계학습이 음성 인식에 적용되기 시작한 시기부터 서비스 디자인, 기획 및 평가 업무를 해왔습니다.
+만들 수 있는 모든 것에 관심이 있습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque. Nullam non nisi est sit amet facilisis. Quisque id diam vel quam. Morbi tincidunt augue interdum velit. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Mi tempus imperdiet nulla malesuada pellentesque. Maecenas ultricies mi eget mauris pharetra et ultrices. Cursus risus at ultrices mi tempus imperdiet nulla. Sit amet nisl suscipit adipiscing bibendum est ultricies. At volutpat diam ut venenatis tellus in. Cursus eget nunc scelerisque viverra mauris in. Ut aliquam purus sit amet luctus venenatis lectus.
+### UX 디자인/기획
+- 당연한 것은 없다는 생각을 바탕으로 본질을 고민하여 서비스를 재구성하고자 합니다.
+- 관성적인 흐름과 현실적 타협을 존중하나 그 원인을 이해하고 해결 방법을 찾아내고자 합니다.
+- 음성 기술을 중심으로 발전하는 인공지능 기술에 관심을 가지고 소화해내려 합니다.
 
+### 사용성 평가/제안
+- 2013년부터 19개 사용성 연구 프로젝트에 참여해, 667명의 사용자를 만났습니다.
+- 음성 인터페이스 분야에 있어서는 많은 사용자를 만나보고 깊이 있게 분석해왔다고 자부합니다.
+- 하지만 경험이 만드는 선입견을 경계하고 매번 새로운 면을 발견하고 배워 나가려 합니다.
 
+### Skill
 
-<a href="https://unsplash.com/@tomcrewceramics" target="_blank">Image credits - Tom Crew</a>
+- Figma를 사용한 UX 기획 및 디자인과 프로토타이핑
+- 사용자 조사 및 사용성 테스트 설계 및 수행
+- 정량적 데이터를 분석하여 문제 도출 및 해결
+- 협업과 업무 프로세스 개선
+
+### Experience
+
+- 기술과 서비스, 비즈니스를 통찰하는 UX 기획
+- 사용자 인터뷰, 사용성 평가, 프로토타입 테스트 등 UX 리서치 경험 다수
+- 정성적/정량적 데이터 기반 UX 디자인 및 컨설팅
+- 테스트와 피드백을 통한 아이디어 발전 경험
+- 인공지능 기술 이해 및 관련 업무 경험
 
 

@@ -55,9 +55,7 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <ul className="nav">
-                <li className={`nav-home  ${data.pathname === '/' ? 'nav-current' : ""} `}>
-                  <Link to={`/`}>Home</Link>
-                </li>
+
                 <li className={`nav-home  ${data.pathname.includes('/work') ? 'nav-current' : ""} `}>
                   <Link to={`/work`}>Work</Link>
                 </li>
