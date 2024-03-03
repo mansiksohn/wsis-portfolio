@@ -1,6 +1,6 @@
 ---
 templateKey: work-sub-page
-thumbnail: /img/cover-20220712-Accessible-Kiosk.png
+thumbnail: ./cover-20220712-Accessible-Kiosk.png
 date: 2022-07-12
 title: 성동구 스마트 민원서식 작성 시스템 구축
 description: "민원서식 신청의 편리성을  향상하며, ‘장애인 차별 금지법’ 준수를 위한 배리어프리(barrier-free) 기능이 있는 민원 작성을 도와주는 키오스크 설계"
@@ -35,8 +35,8 @@ description: "민원서식 신청의 편리성을  향상하며, ‘장애인 �
 
 조작을 위한 UI는 반드시 화면 하단에 위치하도록 하여, 위에서 화면을 읽고 아래서 답한다는 간단한 규칙을 전달함과 동시에 신장이 작서나 휠체어를 사용하는 민원인이 조작에 어려움을 겪지 않도록 했습니다.
 
-![키오스크 UI 1](/img/Accessible-Kiosk-001.jpg)
-![키오스크 UI 2](/img/Accessible-Kiosk-002.jpg)
-![키오스크 UI 3](/img/Accessible-Kiosk-003.png)
-![키오스크 UI 4](/img/Accessible-Kiosk-004.png)
-![키오스크 UI 5](/img/Accessible-Kiosk-005.png)
+![키오스크 UI 1](./Accessible-Kiosk-001.jpg)
+![키오스크 UI 2](./Accessible-Kiosk-002.jpg)
+![키오스크 UI 3](./Accessible-Kiosk-003.png)
+![키오스크 UI 4](./Accessible-Kiosk-004.png)
+![키오스크 UI 5](./Accessible-Kiosk-005.png)

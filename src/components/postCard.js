@@ -14,7 +14,8 @@ export default props => (
       }
     }
   >
-    <Link to={props.node.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' : `/${props.node.fields.slug.split('/').slice(2, -1).join('/')}`} className="post-card-link">
+    <Link to={props.node.fields.slug.split('/').slice(1, -1).join('/') === '' ? '/' : `/${props.node.fields.slug.split('/').slice(1, -1).join('/')}`}
+      className="post-card-link">
       <div className="post-card-content">
         <h2 className="post-card-title">
           {props.node.frontmatter.title }

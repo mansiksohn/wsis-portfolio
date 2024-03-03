@@ -1,6 +1,6 @@
 ---
 templateKey: work-sub-page
-thumbnail: /img/cover-20230201-AI-Shadowing.png
+thumbnail: ./cover-20230201-AI-Shadowing.png
 date: 2023-02-01
 title: AI 어린이 영어쉐도잉 앱 개발
 description: "AI 발음평가 기술을 활용하여 도서관과 함께 온-오프라인 믹스로 진행되는 영어교육앱 기획 및 디자인"
@@ -21,6 +21,6 @@ AI 발음평가 기술을 활용하여 도서관과 함께 온-오프라인 믹�
 ## 💡 결과
 릴리즈 준비중입니다.
 
-![쉐도잉 앱 UI 1](/img/AI-Shadowing-000.png)
-![쉐도잉 앱 UI 2](/img/AI-Shadowing-001.png)
-![쉐도잉 앱 UI 3](/img/AI-Shadowing-002.png)
+![쉐도잉 앱 UI 1](./AI-Shadowing-000.png)
+![쉐도잉 앱 UI 2](./AI-Shadowing-001.png)
+![쉐도잉 앱 UI 3](./AI-Shadowing-002.png)

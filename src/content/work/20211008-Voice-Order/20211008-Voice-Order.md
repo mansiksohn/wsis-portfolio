@@ -1,6 +1,6 @@
 ---
 templateKey: work-sub-page
-thumbnail: /img/cover-20211008-Voice-Order.png
+thumbnail: ./cover-20211008-Voice-Order.png
 date: 2021-10-08
 title: 전화 자동주문 AI 콜봇 프로젝트
 description: "전화로 접근하는 사람을 위한 AI 주문처리 서비스"
@@ -27,5 +27,5 @@ description: "전화로 접근하는 사람을 위한 AI 주문처리 서비스"
 
 한편 문의전화의 대부분은 배달 지연에 따른 시간 확인이기 때문에, 상태정보를 활용해 효과적으로 대응할 수 있다고 판단했습니다. 전화가 걸려왔을 때 배달중인 상태라면 현재 주문 상태에 대해 말하주는 것으로 서비스를 시작하여 자연스럽게 문의를 해결할 수 있도록 할 수 있습니다.
 
-![전화주문 시나리오 1](/img/Voice-Order-001.png)
-![전화주문 시나리오 2](/img/Voice-Order-002.png)
+![전화주문 시나리오 1](./Voice-Order-001.png)
+![전화주문 시나리오 2](./Voice-Order-002.png)

@@ -8,10 +8,10 @@ import Seo from "../components/seo"
 
 const BlogPostTemplate = (props) => {
   const { pageContext } = props
-  const nextSlug = pageContext?.next ? pageContext?.next?.fields?.slug.split('/').slice(2, -1).join('/') === '' ? '/' :
-    `/${pageContext.next.fields.slug.split('/').slice(2, -1).join('/')}` : '/';
-  const previousSlug = pageContext.previous ? pageContext?.previous?.fields?.slug?.split('/').slice(2, -1).join('/') === '' ? '/' :
-    `/${pageContext.previous.fields.slug.split('/').slice(2, -1).join('/')}` : "/"
+  const nextSlug = pageContext?.next ? pageContext?.next?.fields?.slug.split('/').slice(1, -1).join('/') === '' ? '/' :
+    `/${pageContext.next.fields.slug.split('/').slice(1, -1).join('/')}` : '/';
+  const previousSlug = pageContext.previous ? pageContext?.previous?.fields?.slug?.split('/').slice(1, -1).join('/') === '' ? '/' :
+    `/${pageContext.previous.fields.slug.split('/').slice(1, -1).join('/')}` : "/"
   const nextLinkStatus = pageContext?.next ? pageContext?.next?.frontmatter?.templateKey === 'work-sub-page' ? true : false : false
   const previousLinkStatus = pageContext?.previous ? pageContext?.previous?.frontmatter?.templateKey === 'work-sub-page' ? true : false : false
 

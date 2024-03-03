@@ -9,10 +9,10 @@ import SEO from "../components/seo"
 const BlogPostTemplate = (props) => {
  
   const { pageContext } = props
-  const nextSlug = pageContext.next ? pageContext.next.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' :
-    `/${pageContext.next.fields.slug.split('/').slice(2, -1).join('/')}` : '/'
-  const previousSlug = pageContext.previous ? pageContext.previous.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' :
-    `/${pageContext.previous.fields.slug.split('/').slice(2, -1).join('/')}` : "/"
+  const nextSlug = pageContext.next ? pageContext.next.fields.slug.split('/').slice(1, -1).join('/') === '' ? '/' :
+    `/${pageContext.next.fields.slug.split('/').slice(1, -1).join('/')}` : '/'
+  const previousSlug = pageContext.previous ? pageContext.previous.fields.slug.split('/').slice(1, -1).join('/') === '' ? '/' :
+    `/${pageContext.previous.fields.slug.split('/').slice(1, -1).join('/')}` : "/"
   const nextLinkStatus = pageContext.next ? pageContext.next.frontmatter.templateKey === 'blog-post' ? true : false : false
   const previousLinkStatus = pageContext.previous ? pageContext.previous.frontmatter.templateKey === 'blog-post' ? true : false : false
 
@@ -24,8 +24,7 @@ const BlogPostTemplate = (props) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
-
+        image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData.images.fallback.src || 'img/wsis-logo.png'}
       />
       <article
         className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}

@@ -38,37 +38,37 @@ exports.createPages = ({ graphql, actions }) => {
     blogPost.forEach((post, index) => {
       const previous = index === blogPost.length - 1 ? null : blogPost[index + 1].node
       const next = index === 0 ? null : blogPost[index - 1].node
+      // 새 경로 생성 로직
+      const slug = post.node.fields.slug.replace('/content/blog/', '/blog/');
 
       createPage({
-        path: post.node.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' : `/${post.node.fields.slug.split('/').slice(2, -1).join('/')}`,
-        component: path.resolve(
-          `src/templates/blog-post.js`
-        ),
+        path: slug,
+        component: path.resolve(`src/templates/blog-post.js`),
         context: {
-          slug: post.node.fields.slug,
+          slug: slug,
           previous,
           next,
         },
-      })
-    })
+      });
+    });
     // Template For work-sub-page
     const workPage = posts.filter(item => item.node.frontmatter.templateKey === 'work-sub-page')
     workPage.forEach((post, index) => {
       const previous = index === workPage.length - 1 ? null : workPage[index + 1].node
       const next = index === 0 ? null : workPage[index - 1].node
+      // 새 경로 생성 로직
+      const slug = post.node.fields.slug.replace('/content/work/', '/work/');
 
       createPage({
-        path: post.node.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' : `/${post.node.fields.slug.split('/').slice(2, -1).join('/')}`,
-        component: path.resolve(
-          `src/templates/work-sub-page.js`
-        ),
+        path: slug,
+        component: path.resolve(`src/templates/work-sub-page.js`),
         context: {
-          slug: post.node.fields.slug,
+          slug: slug,
           previous,
           next,
         },
-      })
-    })
+      });
+    });
     // Template For exhibitions-sub-page
     const exhibitionsPage = posts.filter(item => item.node.frontmatter.templateKey === 'exhibitions-sub-page')
     exhibitionsPage.forEach((post, index) => {
@@ -114,11 +114,12 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    // 새 폴더 구조에 맞는 slug 생성 로직
+    const slug = createFilePath({ node, getNode, basePath: `content` });
     createNodeField({
-      name: `slug`,
       node,
-      value,
-    })
+      name: `slug`,
+      value: slug,
+    });
   }
-}
+};
