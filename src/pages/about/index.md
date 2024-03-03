@@ -1,5 +1,5 @@
 ---
-templateKey: bio-page
+templateKey: about-page
 thumbnail: /img/wsis-logo.png
 date: 2023-03-02T10:17:05.133Z
 title: About

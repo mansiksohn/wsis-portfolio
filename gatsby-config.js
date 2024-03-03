@@ -71,10 +71,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1360,
+              maxWidth: 1280,
               withWebp: true,
               showCaptions: false,
-              quality: 75,
+              quality: 80,
               wrapperStyle: `margin: 7vw 0;`,
             },
           },
@@ -136,7 +136,6 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4e0899`,
         display: `standalone`,
-        resolve: `gatsby-plugin-manifest`,
         icon: siteConfig.manifest_icon,
       },
     },

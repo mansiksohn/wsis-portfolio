@@ -56,7 +56,7 @@ query IndexPage {
       }
     }
   }
-  markdownRemark(frontmatter: {templateKey: {eq: "news-page"}}) {
+  markdownRemark(frontmatter: {templateKey: {eq: "blog-page"}}) {
     frontmatter {
       title
       description

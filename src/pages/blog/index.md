@@ -1,5 +1,5 @@
 ---
-templateKey: news-page
+templateKey: blog-page
 title: Blog
 date: 2023-03-02T10:17:05.133Z
 thumbnail: /img/clay-images-17.jpg

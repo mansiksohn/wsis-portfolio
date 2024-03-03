@@ -59,11 +59,11 @@ const Layout = props => {
                 <li className={`nav-home  ${data.pathname.includes('/work') ? 'nav-current' : ""} `}>
                   <Link to={`/work`}>Work</Link>
                 </li>
-                <li className={`nav-home  ${data.pathname.includes('/news') ? 'nav-current' : ""} `}>
-                  <Link to={`/news`}>Blog</Link>
+                <li className={`nav-home  ${data.pathname.includes('/blog') ? 'nav-current' : ""} `}>
+                  <Link to={`/blog`}>Blog</Link>
                 </li>
-                <li className={`nav-home  ${data.pathname.includes('/bio') ? 'nav-current' : ""} `}>
-                  <Link to={`/bio`}>About</Link>
+                <li className={`nav-home  ${data.pathname.includes('/about') ? 'nav-current' : ""} `}>
+                  <Link to={`/about`}>About</Link>
                 </li>
               </ul>
           </div>
