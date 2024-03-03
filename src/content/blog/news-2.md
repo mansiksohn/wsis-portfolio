@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-thumbnail: /img/clay-images-11.jpg
+thumbnail: 
 date: 2023-03-06T05:10:14.676Z
 title: News 2
 description: "Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!"
