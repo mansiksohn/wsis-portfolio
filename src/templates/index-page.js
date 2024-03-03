@@ -31,12 +31,10 @@ const WorkPage = ({ data }) => {
 
     {/* 자기소개 섹션 추가 */}
     <div className="intro-section">
-      <h1>Hi! I am Mansiksohn.<br />I’m a <u>Conversational Product Designer</u> based in Korea.</h1>
-      <p>안녕하세요! 저는 한국에서 활동하고 있는 대화형 프로덕트 디자이너, Mansiksohn입니다. 
-음성인터페이스 분야에서 9년 이상의 경험을 바탕으로 사용자 중심의 매력적인 대화경험을 디자인하는 데 전문성을 가지고 있습니다. 
-제 프로젝트는 제품 기획부터 사용성 평가에 이르기까지 다양하며, 사용자 경험 향상을 위한 인간 중심의 디자인 원칙과 인터랙티브 시스템 구축에 중점을 두고 있습니다. 
-새로운 기술에 대한 열정을 가지고 있으며, 제 작업은 더 나은 사회를 만드는 데에 대한 제 헌신을 반영합니다. 
-제 커리어 여정에 대해 더 깊이 알고 싶으시다면, <a href="#work">아래</a>에서 제 포트폴리오를 확인해 주세요.</p>
+      <h1>Hi! I am Mansiksohn.<br />I’m a <b class='coloredpen'>Conversational Product Designer</b> based in Korea.</h1>
+      <p>안녕하세요! 저는 한국에서 활동하고 있는 대화형 프로덕트 디자이너입니다. 주로 음성을 사용하는 대화 인터페이스 분야에서 9년 이상의 경험을 바탕으로 제품 기획부터 사용성 평가에 이르기까지 다양한 프로젝트에 참여해 사용자 중심의 매력적인 대화경험을 만들어왔습니다.</p>
+      <p>새로운 기술을 발견과 무엇이든 만들어 내는 것에 관심이 있습니다.<br />현재는 <u class='highlighter'>음성 인공지능 기술을 활용한 교육서비스</u>를 만드는데 참여하고 있습니다. 
+      제 커리어 여정에 대해 더 깊이 알고 싶으시다면, <a href="#work">아래</a>에서 제 포트폴리오를 확인해 주세요.</p>
     </div>
 
     <div id="work" className="post-feed">

@@ -1,5 +1,6 @@
 ---
 templateKey: work-sub-page
+thumbnail: /img/cover-20200113-TTS-Platform.png
 date: 2020-01-13
 title: 음성합성 신규 서비스 기획
 description: "타코트론 기반 음성합성 기술을 활용, 엔터테인먼트 관련 분야와 협업할 수 있는 사업 구상"
@@ -26,11 +27,11 @@ description: "타코트론 기반 음성합성 기술을 활용, 엔터테인먼
 - 목소리를 활용할 수 있는 서비스 V-moji, 알람, 콘텐츠 생성 등
 - 오용 방지를 위한 사용 내용 기록과 워터마크
 
-![교차 네트워크가 원활하게 발생하는 플랫폼](TTS-Platform-001.png)
-![목소리 구매 서비스](TTS-Platform-002.png)
-![판매하는 목소리는 어떤 것인가?](TTS-Platform-003.png)
-![구매 시나리오](TTS-Platform-004.png)
-![비즈니스 영역](TTS-Platform-005.png)
-![규모의 경제와 네트워크 효과를 통한 선순환 고리 만들기 모델링](TTS-Platform-006.png)
-![순환고리 추가를 통한 플랫폼 확장](TTS-Platform-007.png)
-![매출](TTS-Platform-008.png)
+![교차 네트워크가 원활하게 발생하는 플랫폼](/img/TTS-Platform-001.png)
+![목소리 구매 서비스](/img/TTS-Platform-002.png)
+![판매하는 목소리는 어떤 것인가?](/img/TTS-Platform-003.png)
+![구매 시나리오](/img/TTS-Platform-004.png)
+![비즈니스 영역](/img/TTS-Platform-005.png)
+![규모의 경제와 네트워크 효과를 통한 선순환 고리 만들기 모델링](/img/TTS-Platform-006.png)
+![순환고리 추가를 통한 플랫폼 확장](/img/TTS-Platform-007.png)
+![매출](/img/TTS-Platform-008.png)

@@ -133,6 +133,7 @@ body {
 }
 footer.site-foot a {
   text-decoration: underline;
+  box-shadow: none !important;
 }
 
 .site-foot a {
@@ -186,6 +187,7 @@ footer.site-foot a {
   color: var(--color-base);
   font-weight: 600;
   opacity: 1.0;
+  box-shadow: none;
 }
 
 .site-head-right a {
@@ -196,6 +198,7 @@ footer.site-foot a {
   font-weight: 600;
   opacity: 0.4;
   font-size: 1.4em;
+  box-shadow: none;
 }
 
 .nav-current a,
@@ -338,7 +341,7 @@ footer.site-foot a {
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
-    font-weight: 200;
+    font-weight: 600;
     opacity: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99),
       opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -406,10 +409,11 @@ footer.site-foot a {
     transform: scale(1) translateY(0px);
   }
   .site-head-open .nav-current a {
-    border-bottom: var(--color-base) 2px solid;
+    /* border-bottom: var(--color-base) 2px solid; */
+    box-shadow: inset 0 -8px var(--color-primary);
   }
   .site-head-open .site-head-right a {
-    opacity: 0.5;
+    opacity: 1;
   }
   .site-head-open .site-foot {
     display: block;
@@ -440,7 +444,7 @@ footer.site-foot a {
   overflow: hidden;
   counter-increment: posts;
   margin: 1rem;
-  border-radius: var(--radius); 
+  border-radius: var(--radius);
 }
 
 @media (max-width: 700px) {
@@ -457,6 +461,7 @@ footer.site-foot a {
 .post-card-link {
   flex: 1 1 auto;
   display: block;
+  box-shadow: none !important;
 }
 
 .post-card-content {
@@ -470,7 +475,7 @@ footer.site-foot a {
   bottom: 0;
   left: 0;
   color: #fff;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--color-primary-highlighter);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
@@ -603,6 +608,7 @@ footer.site-foot a {
 .post-content-body {
   font-size: 1.9rem;
   line-height: 1.65em;
+  box-shadow: none !important;
 }
 @media (max-width: 500px) {
   .post-content-body {
@@ -795,4 +801,14 @@ img {border-radius: 2px;}
 /* ---------------------------------------------------------- */
 .intro-section{
   padding: 10vw 10px;
+}
+.highlighter{
+  text-decoration: none;
+  box-shadow: inset 0 -1rem var(--color-primary-highlighter);
+}
+.coloredpen{
+  color: var(--color-primary);
+}
+.gatsby-resp-image-link{
+  box-shadow: none;
 }

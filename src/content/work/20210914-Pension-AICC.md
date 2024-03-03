@@ -1,5 +1,6 @@
 ---
 templateKey: work-sub-page
+thumbnail: /img/cover-20210914-Pension-AICC.png
 date: 2021-09-13
 title: 신한은행 퇴직연금 음성봇
 description: "연금 문의 콜센터를 AI로 대체"
@@ -35,14 +36,14 @@ description: "연금 문의 콜센터를 AI로 대체"
 불확실한 의도 파악을 위해서 기존 콜센터 대화 기록을 일부 활용할 수 있었습니다. 사업적 상품 분류보다는 고객 질문을 기준으로 다시 다이어그램을 그려 재분류하는 방안을 제시했으나, 개발기간의 문제로 기존 상품 분류를 기준으로 시나리오가 작성되게 되었던 것은 아쉬운 점이었습니다.
 
 ### Voice & Tone Guideline
-![Voice & Tone Guideline](Pension-AICC-001.png)
+![Voice & Tone Guideline](/img/Pension-AICC-001.png)
 
 ### 가이드라인 구축 단계
-![가이드라인 구축 단계](Pension-AICC-002.png)
+![가이드라인 구축 단계](/img/Pension-AICC-002.png)
 
 ### 대화성공 모델의 디자인/평가
-![대화성공 모델의 디자인/평가](Pension-AICC-003.png)
+![대화성공 모델의 디자인/평가](/img/Pension-AICC-003.png)
 
 ### 기본 대화 전략 제시
-![기본 대화 구조](Pension-AICC-004.png)
-![대화 전략](Pension-AICC-005.png)
+![기본 대화 구조](/img/Pension-AICC-004.png)
+![대화 전략](/img/Pension-AICC-005.png)

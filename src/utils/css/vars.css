@@ -9,10 +9,11 @@
 :root {
 
     /* Colours */
-    --color-primary: #4e0899;
-    --color-base: #0f0e0e;
-    --color-border: #ddd;
-    --color-bg: #ffffff;
+    --color-primary: hsla(269, 90%, 32%);
+    --color-primary-highlighter: hsla(269, 90%, 32%, 0.3);
+    --color-base: hsl(0, 3%, 6%);
+    --color-border: hsl(0, 0%, 87%);
+    --color-bg: hsl(0, 0%, 100%);
     
     /* Fonts */
     --font-sans-serif: 'Noto Sans KR', sans-serif;
