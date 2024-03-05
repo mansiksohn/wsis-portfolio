@@ -3,7 +3,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import PostCard from "../components/postCard"
+import WorkCard from "../components/workCard"
 
 // eslint-disable-next-line
 const WorkPage = ({ data }) => {
@@ -29,11 +29,11 @@ const WorkPage = ({ data }) => {
         </header>
       )}
 
-      <div className="post-feed">
+      <div className="work-feed">
         {posts.map(({ node }) => {
           postCounter++
           return (
-            <PostCard
+            <WorkCard
               key={node.fields.slug}
               count={postCounter}
               node={node}

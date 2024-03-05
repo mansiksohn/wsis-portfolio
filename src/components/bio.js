@@ -24,11 +24,10 @@ function Bio() {
                 borderRadius: `50%`,
               }} />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who lives and works in Korea.
               {` `}
               <a href={`https://instgram.com/${social.instgram}`}>
-                You should follow him on Instgram
+                no Instgram
               </a>
             </p>
           </section>

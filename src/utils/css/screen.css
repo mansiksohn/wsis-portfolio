@@ -425,15 +425,23 @@ footer.site-foot a {
   }
 }
 
-/* Post Feed
+/* Post Feed 커스터마이징
 /* ---------------------------------------------------------- */
 
-.post-feed {
+.post-card {
+  display: flex;
+
+}
+
+/* Work Feed (Post Feed 커스터마이징을 위한 복사)
+/* ---------------------------------------------------------- */
+
+.work-feed {
   display: flex;
   flex-wrap: wrap;
 }
 
-.post-card {
+.work-card {
   position: relative;
   flex: 1 0 auto;
   display: flex;
@@ -448,23 +456,23 @@ footer.site-foot a {
 }
 
 @media (max-width: 700px) {
-  .post-card {
+  .work-card {
     flex: 1 1 100%;
     height: 24vw;
   }
 }
 
-.post-card-large {
+.work-card-large {
   flex: 1 1 100%;
 }
 
-.post-card-link {
+.work-card-link {
   flex: 1 1 auto;
   display: block;
   box-shadow: none !important;
 }
 
-.post-card-content {
+.work-card-content {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -480,21 +488,21 @@ footer.site-foot a {
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-.post-card.with-image .post-card-content {
+.work-card.with-image .work-card-content {
   opacity: 0;
 }
 @media (max-width: 700px) {
-  .post-card.with-image .post-card-content {
+  .work-card.with-image .work-card-content {
     opacity: 1;
   }
 }
 
-.post-card-link:hover .post-card-content {
+.work-card-link:hover .work-card-content {
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-.post-card-title {
+.work-card-title {
   margin: 0;
   display: inline-block;
   font-size: 3.4rem;
@@ -505,7 +513,7 @@ footer.site-foot a {
 }
 
 /* Posts without images */
-.post-card.no-image:before {
+.work-card.no-image:before {
   display: block;
   content: counter(posts);
   position: absolute;
@@ -518,30 +526,30 @@ footer.site-foot a {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.post-card.no-image .post-card-content {
+.work-card.no-image .work-card-content {
   justify-content: flex-start;
   align-items: center;
   padding: 4vw;
   background: rgba(0, 0, 0, 0.1);
 }
 
-.post-card.no-image .post-card-title {
+.work-card.no-image .work-card-title {
   font-size: 4rem;
   line-height: 1.15em;
   text-align: left;
 }
 
-.post-card.no-image:hover .post-card-title {
+.work-card.no-image:hover .work-card-title {
   text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
-  .post-card.no-image .post-card-title {
+  .work-card.no-image .work-card-title {
     font-size: 3rem;
   }
 }
 @media (max-width: 700px) {
-  .post-card.no-image:before {
+  .work-card.no-image:before {
     font-size: 50vw;
   }
 }
@@ -794,7 +802,10 @@ footer.site-foot a {
 /* Image boarder */
 .kg-image { border-radius: 16px; }
 
-img.gatsby-resp-image-image { border-radius: 16px !important;}
+img.gatsby-resp-image-image {
+  border-radius: 16px !important;
+  box-shadow: none;
+}
 
 img {border-radius: 2px;}
 
@@ -811,5 +822,5 @@ img {border-radius: 2px;}
   color: var(--color-primary);
 }
 .gatsby-resp-image-link{
-  box-shadow: none;
+  box-shadow: none !important;
 }

@@ -1,0 +1,28 @@
+import React from "react"
+import { Link } from "gatsby"
+
+const WorkCard = props => (
+  <article
+    className={`work-card ${props.count % 3 === 0 && `work-card-large`} ${
+      props.postClass
+    } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
+    style={
+      props.node.frontmatter.thumbnail && {
+        backgroundImage: `url(${
+          props.node.frontmatter.thumbnail.childImageSharp.fluid.src
+        })`,
+      }
+    }
+  >
+    <Link to={props.node.fields.slug.split('/').slice(1, -1).join('/') === '' ? '/' : `/${props.node.fields.slug.split('/').slice(1, -1).join('/')}`}
+      className="work-card-link">
+      <div className="work-card-content">
+        <h2 className="work-card-title">
+          {props.node.frontmatter.title }
+        </h2>
+      </div>
+    </Link>
+  </article>
+)
+
+export default WorkCard;

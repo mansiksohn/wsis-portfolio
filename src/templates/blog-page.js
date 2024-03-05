@@ -81,7 +81,7 @@ query IndexPage {
           slug
         }
         frontmatter {
-          date(formatString: "DD:MM:YYYY hh:mm a")
+          date(formatString: "YYYY-MM-DD")
           title
           description
           thumbnail {

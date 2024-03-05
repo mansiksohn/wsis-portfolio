@@ -1,26 +1,37 @@
 import React from "react"
 import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export default props => (
-  <article
-    className={`post-card ${props.count % 3 === 0 && `post-card-large`} ${
-      props.postClass
-    } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
-    style={
-      props.node.frontmatter.thumbnail && {
-        backgroundImage: `url(${
-          props.node.frontmatter.thumbnail.childImageSharp.fluid.src
-        })`,
-      }
-    }
-  >
-    <Link to={props.node.fields.slug.split('/').slice(1, -1).join('/') === '' ? '/' : `/${props.node.fields.slug.split('/').slice(1, -1).join('/')}`}
-      className="post-card-link">
-      <div className="post-card-content">
-        <h2 className="post-card-title">
-          {props.node.frontmatter.title }
-        </h2>
-      </div>
-    </Link>
-  </article>
-)
+const PostCard = ({ node, count }) => {
+  const image = getImage(node.frontmatter.thumbnail)
+
+  return (
+    <article className={`post-card ${!image ? "no-image" : ""}`}>
+      <Link to={node.fields.slug} className="post-card-link">
+        {image && (
+          <GatsbyImage
+            image={image}
+            alt={node.frontmatter.title}
+            className="post-card-image"
+          />
+        )}
+        <div className="post-card-content">
+          <h2 className="post-card-title">{node.frontmatter.title}</h2>
+          <p className="post-card-meta">
+            {node.frontmatter.date} &middot; {node.timeToRead} posted
+            {/* 태그가 있다면 태그를 표시 */}
+            {node.frontmatter.tags && (
+              <div className="post-card-tags">
+                {node.frontmatter.tags.map(tag => (
+                  <span key={tag} className="post-card-tag">#{tag}</span>
+                ))}
+              </div>
+            )}
+          </p>
+        </div>
+      </Link>
+    </article>
+  )
+}
+
+export default PostCard
