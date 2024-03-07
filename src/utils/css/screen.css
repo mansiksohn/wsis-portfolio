@@ -28,6 +28,12 @@ body {
   transition: background 0.3s ease-out;
   transition-delay: 0.25;
   word-break: keep-all; /* 한국어 줄바꿈 규칙 추가 */
+  
+  /* Removing the Purple Bars in Safari on iPhone */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 .img {
@@ -198,12 +204,12 @@ footer.site-foot a {
   font-weight: 600;
   opacity: 0.4;
   font-size: 1.4em;
-  box-shadow: none;
+  text-decoration: wavy underline;
 }
 
 .nav-current a,
 .site-head a:hover {
-  text-decoration: none;
+  text-decoration: wavy underline;
   opacity: 1;
 }
 
@@ -409,8 +415,8 @@ footer.site-foot a {
     transform: scale(1) translateY(0px);
   }
   .site-head-open .nav-current a {
-    /* border-bottom: var(--color-base) 2px solid; */
-    box-shadow: inset 0 -8px var(--color-primary);
+    text-decoration: wavy underline;
+    color: var(--color-primary);
   }
   .site-head-open .site-head-right a {
     opacity: 1;
@@ -428,9 +434,17 @@ footer.site-foot a {
 /* Post Feed 커스터마이징
 /* ---------------------------------------------------------- */
 
+.post-feed {
+
+}
+
 .post-card {
   display: flex;
+}
 
+.post-card-link {
+  text-decoration: none;
+  color: var(--color-base);
 }
 
 /* Work Feed (Post Feed 커스터마이징을 위한 복사)
@@ -469,7 +483,6 @@ footer.site-foot a {
 .work-card-link {
   flex: 1 1 auto;
   display: block;
-  box-shadow: none !important;
 }
 
 .work-card-content {

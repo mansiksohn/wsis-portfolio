@@ -3,7 +3,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import PostCard from "../components/postCard"
+import WorkCard from "../components/workCard"
 
 // eslint-disable-next-line
 const WorkPage = ({ data }) => {
@@ -33,14 +33,14 @@ const WorkPage = ({ data }) => {
     <div className="intro-section">
       <h1>Hi! I am Mansiksohn.<br />I’m a <b class='coloredpen'>Conversational Product Designer</b> based in Korea.</h1>
       <p>안녕하세요! 저는 한국에서 활동하고 있는 대화형 프로덕트 디자이너입니다. 주로 음성을 사용하는 대화 인터페이스 분야에서 9년 이상의 경험을 바탕으로 제품 기획부터 사용성 평가에 이르기까지 다양한 프로젝트에 참여해 사용자 중심의 매력적인 대화경험을 만들어왔습니다.</p>
-      <p>새로운 기술을 발견과 무엇이든 만들어 내는 것에 관심이 있습니다.<br />현재는 <u class='highlighter'>음성 인공지능 기술을 활용한 교육서비스</u>를 만드는데 참여하고 있습니다. 제 작업에 대해 더 깊이 알고 싶으시다면, <a href="#work">아래</a>에서 포트폴리오를 확인해 주세요.</p>
+      <p>새로운 기술을 발견과 무엇이든 만들어 내는 것에 관심이 있습니다.<br />현재는 음성 인공지능 기술을 활용한 교육서비스를 만드는데 참여하고 있습니다. 제 작업에 대해 더 깊이 알고 싶으시다면, <a href="#work">아래에서 포트폴리오</a>를 확인해 주세요.</p>
     </div>
 
-    <div id="work" className="post-feed">
+    <div id="work" className="work-feed">
         {posts.map(({ node }) => {
           postCounter++
           return (
-            <PostCard
+            <WorkCard
               key={node.fields.slug}
               count={postCounter}
               node={node}
