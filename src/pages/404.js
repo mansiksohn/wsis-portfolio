@@ -15,7 +15,7 @@ class NotFoundPage extends React.Component {
         <SEO title="404: Not Found" />
         <div className="good-bye-page">
          <h1>Not Found</h1>
-         <p>You just hit a route that doesn&#39;t exist... 🪦</p>
+         <p>404: You're in the 'In Progress' zone. <br />But don't worry, a safe path back home is provided for you.</p>
          <p><a href="/">Return Home</a>
          </p>
         </div>

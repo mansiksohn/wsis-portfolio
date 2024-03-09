@@ -26,7 +26,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   background: var(--color-bg);
   transition: background 0.3s ease-out;
-  transition-delay: 0.25;
+  transition-delay: 0.25s;
   word-break: keep-all; /* 한국어 줄바꿈 규칙 추가 */
   
   /* Removing the Purple Bars in Safari on iPhone */
@@ -192,7 +192,7 @@ footer.site-foot a {
   padding: 10px 12px;
   color: var(--color-base);
   font-weight: 600;
-  opacity: 1.0;
+  opacity: 1;
   box-shadow: none;
 }
 
@@ -202,15 +202,16 @@ footer.site-foot a {
   padding: 10px 12px;
   color: var(--color-base);
   font-weight: 600;
-  opacity: 0.4;
   font-size: 1.4em;
-  text-decoration: wavy underline;
+  text-decoration: none;
 }
 
 .nav-current a,
 .site-head a:hover {
-  text-decoration: wavy underline;
-  opacity: 1;
+  color: var(--color-primary);
+  text-decoration: wavy underline overline;
+  text-underline-position: under;
+  text-underline-offset: 3px;
 }
 
 .site-head-center {
@@ -221,17 +222,10 @@ footer.site-foot a {
 }
 
 .site-head-logo {
-  /*font-family: 'Libre Barcode 39', cursive;*/
   font-family: 'Noto Sans KR ',sans-serif;
   flex-shrink: 0;
   display: block;
   padding: 10px;
-  color: var(--color-base);
-  font-size: 3rem;
-  line-height: 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
 .site-head-logo:hover {
@@ -243,6 +237,11 @@ footer.site-foot a {
   margin-top: 2px;
   width: auto;
   height: 28px;
+  transition: transform 0.3s ease; /* 애니메이션 전환 효과 추가 */
+}
+
+.site-head-logo:hover img {
+  transform: translateY(-2px);
 }
 
 .site-head-right {
@@ -414,9 +413,11 @@ footer.site-foot a {
       opacity 0.9s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: scale(1) translateY(0px);
   }
-  .site-head-open .nav-current a {
-    text-decoration: wavy underline;
+  .site-head-open .nav-current a,
+  .site-head-open .site-head a:hover {
     color: var(--color-primary);
+    text-decoration: wavy underline;
+    text-underline-offset: -1px;
   }
   .site-head-open .site-head-right a {
     opacity: 1;
@@ -435,17 +436,31 @@ footer.site-foot a {
 /* ---------------------------------------------------------- */
 
 .post-feed {
-
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 포스트 간 간격 */
 }
 
 .post-card {
   display: flex;
+  transition: transform 0.3s ease; /* 변환 애니메이션을 위한 전환 효과 추가 */
+}
+
+.post-card:hover {
+  transform: translateY(-4px); /* 호버 시 카드를 위로 이동 */
 }
 
 .post-card-link {
   text-decoration: none;
   color: var(--color-base);
 }
+
+.post-card-title {
+  margin: 1.5em 0 0 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
 
 /* Work Feed (Post Feed 커스터마이징을 위한 복사)
 /* ---------------------------------------------------------- */
@@ -457,27 +472,37 @@ footer.site-foot a {
 
 .work-card {
   position: relative;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   display: flex;
-  position: relative;
-  height: 16vw;
-  background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
+  /*height: 16vw;*/
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
   margin: 1rem;
   border-radius: var(--radius);
+  flex-direction: column; /* 컨텐츠를 세로로 쌓음 */
+  align-items: center; /* 가로축 기준으로 중앙 정렬 */
+  max-width: 100%; /* 카드의 최대 너비를 강제함 */
+}
+
+.work-card img {
+  max-width: 105%; /* 이미지가 카드 너비를 넘지 않도록 설정 */
+  height: auto; /* 이미지 높이를 자동으로 조정 */
+  border-radius: var(--radius);
+  filter: grayscale(100%) brightness(50%);
+  transition: transform 0.3s ease, filter 0.3s ease; /* 변환 애니메이션을 위한 전환 효과 추가 */
+}
+
+.work-card:hover img {
+  filter: blur(8px) grayscale(60%) brightness(50%); /* 호버 시 이미지를 흐리게 처리 */
+  transform: scale(1.03);
 }
 
 @media (max-width: 700px) {
   .work-card {
     flex: 1 1 100%;
-    height: 24vw;
+    /*height: 24vw;*/
   }
-}
-
-.work-card-large {
-  flex: 1 1 100%;
 }
 
 .work-card-link {
@@ -518,14 +543,12 @@ footer.site-foot a {
 .work-card-title {
   margin: 0;
   display: inline-block;
-  font-size: 3.4rem;
   max-width: 70%;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
-  text-shadow: 0px 0px 6px black;
 }
 
-/* Posts without images */
+/* Works without images */
 .work-card.no-image:before {
   display: block;
   content: counter(posts);

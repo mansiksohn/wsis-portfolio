@@ -25,29 +25,10 @@ const Layout = props => {
           </div>
         </button>
 
-          {/*
-          <a
-            className="nav-burger"
-            href={`#`}
-            onClick={() => setToggleNav(!toggleNav)}
-          >
-            <div
-              className="hamburger hamburger--collapse"
-              aria-label="Menu"
-              role="button"
-              aria-controls="navigation"
-            >
-              <div className="hamburger-box">
-                <div className="hamburger-inner" />
-              </div>
-            </div>
-          </a>
-          */}
-          
           <nav id="swup" className="site-head-left">
             {/* 왼쪽에 로고 이미지 커스텀 */}
             <Link className="site-head-logo" to={`/`}>
-              <img src="/img/wsis-logo.png" alt="Logo" /> {/* 로고 이미지 */}
+              <img src="/img/wsis-logo.svg" alt="Logo" /> {/* 로고 이미지 */}
             </Link>
           </nav>
           <div className="site-head-center">
