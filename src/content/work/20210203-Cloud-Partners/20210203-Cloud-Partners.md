@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20210203-Cloud-Partners.png
 date: 2021-02-03
 title: Cloud Partners

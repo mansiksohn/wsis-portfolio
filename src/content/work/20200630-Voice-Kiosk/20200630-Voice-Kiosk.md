@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20200630-Voice-Kiosk.png
 date: 2020-06-30
 title: 음성주문 키오스크

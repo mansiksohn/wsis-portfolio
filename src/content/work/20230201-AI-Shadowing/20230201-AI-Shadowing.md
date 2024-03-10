@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20230201-AI-Shadowing.png
 date: 2023-02-01
 title: AI 어린이 영어쉐도잉 앱 개발

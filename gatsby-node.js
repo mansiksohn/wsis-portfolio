@@ -51,8 +51,8 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
-    // Template For work-sub-page
-    const workPage = posts.filter(item => item.node.frontmatter.templateKey === 'work-sub-page')
+    // Template For work-post
+    const workPage = posts.filter(item => item.node.frontmatter.templateKey === 'work-post')
     workPage.forEach((post, index) => {
       const previous = index === workPage.length - 1 ? null : workPage[index + 1].node
       const next = index === 0 ? null : workPage[index - 1].node
@@ -61,7 +61,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: slug,
-        component: path.resolve(`src/templates/work-sub-page.js`),
+        component: path.resolve(`src/templates/work-post.js`),
         context: {
           slug: slug,
           previous,
@@ -69,6 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
+/*
     // Template For exhibitions-sub-page
     const exhibitionsPage = posts.filter(item => item.node.frontmatter.templateKey === 'exhibitions-sub-page')
     exhibitionsPage.forEach((post, index) => {
@@ -87,15 +88,16 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    //   Template For exhibitions-sub-page
+*/
+    // 모든 마크다운 포스트 중 'blog-post'와 'work-post'가 아닌 나머지 템플릿 키를 가진 페이지 필터링
     const allPage = posts.filter(item =>
       item.node.frontmatter.templateKey !== 'blog-post' &&
-      item.node.frontmatter.templateKey !== 'work-sub-page' &&
-      item.node.frontmatter.templateKey !== 'exhibitions-sub-page')
+      item.node.frontmatter.templateKey !== 'work-post')
     allPage.forEach((post, index) => {
       const previous = index === allPage.length - 1 ? null : allPage[index + 1].node
       const next = index === 0 ? null : allPage[index - 1].node
 
+      // Gatsby의 createPage 함수를 사용하여 실제 페이지 생성
       createPage({
         path: post.node.fields.slug.split('/').slice(2, -1).join('/') === '' ? '/' : `/${post.node.fields.slug.split('/').slice(2, -1).join('/')}`,
         component: path.resolve(
@@ -111,6 +113,7 @@ exports.createPages = ({ graphql, actions }) => {
     return null
   })
 }
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {

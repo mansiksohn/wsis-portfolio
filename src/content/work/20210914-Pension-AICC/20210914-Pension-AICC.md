@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20210914-Pension-AICC.png
 date: 2021-09-13
 title: 신한은행 퇴직연금 음성봇

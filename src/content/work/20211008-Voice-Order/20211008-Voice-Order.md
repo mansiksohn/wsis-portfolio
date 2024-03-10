@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20211008-Voice-Order.png
 date: 2021-10-08
 title: 전화 자동주문 AI 콜봇 프로젝트

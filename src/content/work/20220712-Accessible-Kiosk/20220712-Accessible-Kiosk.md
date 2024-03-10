@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20220712-Accessible-Kiosk.png
 date: 2022-07-12
 title: 성동구 스마트 민원서식 작성 시스템 구축

@@ -1,5 +1,5 @@
 ---
-templateKey: work-sub-page
+templateKey: work-post
 thumbnail: ./cover-20200113-TTS-Platform.png
 date: 2020-01-13
 title: 음성합성 신규 서비스 기획
