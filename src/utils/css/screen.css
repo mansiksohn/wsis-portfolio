@@ -485,15 +485,15 @@ footer.site-foot a {
   max-width: 100%; /* 카드의 최대 너비를 강제함 */
 }
 
-.work-card .gatsby-image-wrapper-constrained {
+.work-card .work-card-image img {
   max-width: 105%; /* 이미지가 카드 너비를 넘지 않도록 설정 */
   height: auto; /* 이미지 높이를 자동으로 조정 */
   border-radius: var(--radius);
-  filter: grayscale(100%) brightness(50%);
+  filter: grayscale(100%) brightness(70%);
   transition: transform 0.3s ease, filter 0.3s ease; /* 변환 애니메이션을 위한 전환 효과 추가 */
 }
 
-.work-card:hover .gatsby-image-wrapper-constrained {
+.work-card:hover .work-card-image img {
   filter: blur(8px) grayscale(60%) brightness(50%); /* 호버 시 이미지를 흐리게 처리 */
   transform: scale(1.03);
 }
@@ -718,7 +718,7 @@ footer.site-foot a {
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  border: color(var(--color-base) l(-10%)) 1px solid;
+  border: none;
   color: #080808;
   font-size: 1.4rem;
   line-height: 1.5em;
