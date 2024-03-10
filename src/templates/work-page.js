@@ -2,7 +2,7 @@ import React from "react";
 // import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 import WorkCard from "../components/workCard"
 
 // eslint-disable-next-line
@@ -14,7 +14,7 @@ const WorkPage = ({ data }) => {
 
   return (
     <Layout title={siteTitle} social={social}>
-      <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
+      <SEO keywords={[`Conversational AI`, `User Experience Design`, `Voice User Interface`]}
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
         image={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid.src}

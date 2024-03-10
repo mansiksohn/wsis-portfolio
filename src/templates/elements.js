@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 // eslint-disable-next-line
 
 
@@ -14,7 +14,7 @@ const BioPage = (props) => {
 
     return (
         <Layout location={props.location} title={site.siteMetadata.title } social={site.siteMetadata.social}>
-        <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
+        <SEO keywords={[`Conversational AI`, `User Experience Design`, `Voice User Interface`]}
           title={post.frontmatter.title}
           description={post.frontmatter.description || ''}
           image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}

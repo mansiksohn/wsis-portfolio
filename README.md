@@ -1,70 +1,21 @@
+<h1 align=center> Mansiksohn's Portfolio Blog | <a href="https://wsis.design" rel="nofollow">WSIS</a>
+<p>
+  <a href="https://app.netlify.com/sites/wsis/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/91b64851-61d0-4ee0-a716-84068c31bfe0/deploy-status" alt="Netlify Status" />
+  </a>
+</p></h1>
+안녕하세요! 저는 대화형 프로덕트를 디자인하는 MansikSohn입니다. 본 포트폴리오 블로그는 제가 2012년부터 지금까지 프로덕트 디자인과 UX 기획을 통해 구축한 대화 경험의 기록입니다.
 
-<h1 align=center>  Clay - A Gatsby Theme | <a href="https://clay-theme.netlify.app" rel="nofollow">Demo</a></h1>
+## 🚀 현재 진행 중인 작업
+- Decap CMS 적용: 효율적인 콘텐츠 관리 및 배포를 위해 Decap CMS를 적용 중입니다.
+- 접근성 개선: 모든 사용자가 쉽게 이용할 수 있도록 웹사이트 접근성을  개선하고 있습니다.
 
+## 💻 사용한 도구들
+- 프론트엔드: Gatsby, React
+- 호스팅: Netlify
 
-![clay-gatsby-theme](https://github.com/lilxyzz/gatsby-clay/blob/master/src/img/Clay-Gatsby-theme.png)
-<br></br>
+## ✍️ 감사의 말
+**Thanks for <a href="https://clay-theme.netlify.app" rel="nofollow">Clay - A Gatsby Theme</a>**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/84e7f42b-65db-4363-a581-2267c2654efb/deploy-status)](https://app.netlify.com/sites/clay-theme/deploys)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/clay-theme)
-
-An image-centric Gatsby theme for publishers, portfolio, photographers blogs and more.
-
-Visually engaging Gatsby theme tailored for publishers, portfolios and more, meticulously crafted to showcase your graphics seamlessly. It's completely free and fully responsive, ensuring a stunning display across all devices.
-
-**If you found the repository valuable or enjoyed using it, consider showing your support by giving it a 5-star rating 🍻**
-
-
-## ⭐ Feature highlights
-
-- Gatsby v5+
-- PWA
-- Netlify/Decap CMS pre-configured
-- PurgeCSS for bundle size optimization
-- Netlify settings predefine
-- Netlify contact form Support
-- SEO optimized
-- 90+ Lighthouse
-
-### Coming soon  
-
-- Light & Dark mode
-
-## 🚀 Local development
-
-1. **clone the repository**
-
-```
-git clone https://github.com/lilxyzz/clay-theme.git
-```
-
-2. **cd into the project directory**
-
-```
-cd clay-theme
-```
-
-3. **install all dependencies for the project**
-
-```
-yarn
-```
-
-4. **start local dev server**
-
-```
-gatsby develop 
-```
-
-**Open the source code and start editing!**
-
-Your site is now running at `http://localhost:8000`
-
-_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-## 🐛 Issues / 💡 Feedback / 👑 Contributing
-
-We welcome contributions and feedback. If you have ideas for improvements or spot a bug, feel free to contribute.
-
-**Inspired by <a target="_blank" href="https://github.com/ImedAdel/gatsby-london" rel="nofollow">Gatsby London</a>**
+## ⚖️ 라이선스
+이 프로젝트는 MIT 라이선스를 따릅니다 - 자세한 사항은 LICENSE.md 파일에서 확인하세요.

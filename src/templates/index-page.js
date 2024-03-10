@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 import WorkCard from "../components/workCard"
 
 const WorkPage = ({ data }) => {
@@ -12,7 +12,7 @@ const WorkPage = ({ data }) => {
 
   return (
     <Layout title={siteTitle} social={social}>
-      <Seo keywords={[`Gatsby Theme`, `Free Gatsby Template`, `Clay Gatsby Theme`]}
+      <SEO keywords={[`Conversational AI`, `User Experience Design`, `Voice User Interface`]}
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
         image={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid.src}
@@ -29,7 +29,7 @@ const WorkPage = ({ data }) => {
 
     {/* 자기소개 섹션 추가 */}
     <div className="intro-section">
-      <h1>Hi! I am Mansiksohn.<br />I’m a <b class='coloredpen'>Conversational Product Designer</b> based in Korea.</h1>
+      <h1>Hi! I am Mansiksohn.<br />I’m a <b className='coloredpen'>Conversational Product Designer</b> based in Korea.</h1>
       <p>안녕하세요! 저는 한국에서 활동하고 있는 대화형 프로덕트 디자이너입니다.<br />
       <a href="#work">아래에서 포트폴리오</a>를 확인해 주세요.</p>
     </div>

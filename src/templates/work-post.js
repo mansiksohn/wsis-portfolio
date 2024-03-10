@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import LeftIcon from '../img/left-icon.svg'
 import RightIcon from '../img/right-icon.svg'
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 
 const BlogPostTemplate = (props) => {
   const { pageContext } = props
@@ -20,7 +20,7 @@ const BlogPostTemplate = (props) => {
   const social = props.data.site.siteMetadata.social
   return (
     <Layout location={props.location} title={siteTitle} social={social}>
-      <Seo
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData.images.fallback.src || 'img/wsis-logo.png'}
