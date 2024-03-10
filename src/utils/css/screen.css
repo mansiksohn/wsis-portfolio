@@ -191,7 +191,7 @@ footer.site-foot a {
   margin: 0;
   padding: 10px 12px;
   color: var(--color-base);
-  font-weight: 600;
+  font-weight: var(--font-bold);
   opacity: 1;
   box-shadow: none;
 }
@@ -201,7 +201,7 @@ footer.site-foot a {
   margin: 0;
   padding: 10px 12px;
   color: var(--color-base);
-  font-weight: 600;
+  font-weight: var(--font-bold);
   font-size: 1.4em;
   text-decoration: none;
 }
@@ -337,7 +337,7 @@ footer.site-foot a {
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
-    font-weight: 200;
+    font-weight: var(--font-light);
     opacity: 1;
   }
 
@@ -346,7 +346,7 @@ footer.site-foot a {
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
-    font-weight: 600;
+    font-weight: var(--font-bold);
     opacity: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99),
       opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -458,7 +458,7 @@ footer.site-foot a {
 .post-card-title {
   margin: 1.5em 0 0 0;
   display: inline-block;
-  font-weight: bold;
+  font-weight: var(--font-bold);
 }
 
 
@@ -485,7 +485,7 @@ footer.site-foot a {
   max-width: 100%; /* 카드의 최대 너비를 강제함 */
 }
 
-.work-card img {
+.work-card .gatsby-image-wrapper img {
   max-width: 105%; /* 이미지가 카드 너비를 넘지 않도록 설정 */
   height: auto; /* 이미지 높이를 자동으로 조정 */
   border-radius: var(--radius);
@@ -493,7 +493,7 @@ footer.site-foot a {
   transition: transform 0.3s ease, filter 0.3s ease; /* 변환 애니메이션을 위한 전환 효과 추가 */
 }
 
-.work-card:hover img {
+.work-card:hover .gatsby-image-wrapper img {
   filter: blur(8px) grayscale(60%) brightness(50%); /* 호버 시 이미지를 흐리게 처리 */
   transform: scale(1.03);
 }
@@ -704,7 +704,7 @@ footer.site-foot a {
   padding: 0 5px 2px;
   font-size: 0.8em;
   line-height: 1em;
-  font-weight: 400 !important;
+  font-weight: var(--font-normal) !important;
   background: var(--color-bg);
   border-radius: var(--radius);
 }
@@ -774,7 +774,7 @@ footer.site-foot a {
 .footnote-backref {
   color: var(--color-primary) !important;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: var(--font-heavy);
   text-decoration: none !important;
   box-shadow: none !important;
 }

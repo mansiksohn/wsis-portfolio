@@ -21,7 +21,7 @@
     padding: 1.5rem;
     font-size: 1.3rem;
     line-height: 1.4em;
-    font-weight: 600;
+    font-weight: var(--font-bold);
     color: var(--color-base);
     text-align: center;
     opacity: 0.4;

@@ -1,24 +1,26 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import WorkCard from "../components/workCard"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import WorkCard from "../components/workCard";
+import { getImage } from "gatsby-plugin-image"
 
 // eslint-disable-next-line
 const WorkPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const social = data.site.siteMetadata.social
-  const posts = data.allMarkdownRemark.edges
+  const siteTitle = data.site.siteMetadata.title;
+  const social = data.site.siteMetadata.social;
+  const posts = data.allMarkdownRemark.edges;
   let postCounter = 0
+  
+  // 이미지 데이터 추출 및 최적화
+  const image = getImage(data.markdownRemark.frontmatter.thumbnail);
 
   return (
     <Layout title={siteTitle} social={social}>
-      <SEO keywords={[`Conversational AI`, `User Experience Design`, `Voice User Interface`]}
+      <SEO
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
-        image={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid.src}
-
+        image={image}
       />
 
       {data.site.siteMetadata.description && (
@@ -45,51 +47,47 @@ const WorkPage = ({ data }) => {
     </Layout>
   )
 }
-export default WorkPage
+export default WorkPage;
 export const WorkPageQuery = graphql`
-query IndexPage {
-  site {
-    siteMetadata {
-      title
-      author
-      social{
-        twitter
-        facebook
+  query WorkPageAndWorkPosts {
+    site {
+      siteMetadata {
+        title
+        author
+        social {
+          twitter
+          facebook
+        }
       }
     }
-  }
-  markdownRemark(frontmatter: {templateKey: {eq: "work-page"}}) {
-    frontmatter {
-      title
-      description
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
+    markdownRemark(frontmatter: {templateKey: {eq: "work-page"}}) {
+      frontmatter {
+        title
+        description
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(width: 1024, layout: CONSTRAINED)
           }
         }
       }
     }
-    
-  }
-  allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "work-post"}}}
-    limit: 30
-    sort: {frontmatter: {date: DESC}}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "YYYY-MM-DD")
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
+    allMarkdownRemark(
+      filter: {frontmatter: {templateKey: {eq: "work-post"}}}
+      limit: 30
+      sort: {frontmatter: {date: DESC}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "YYYY-MM-DD")
+            title
+            description
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 960, layout: CONSTRAINED)
               }
             }
           }
@@ -97,5 +95,4 @@ query IndexPage {
       }
     }
   }
-}
 `;

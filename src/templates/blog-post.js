@@ -16,9 +16,10 @@ const BlogPostTemplate = (props) => {
   const nextLinkStatus = pageContext.next ? pageContext.next.frontmatter.templateKey === 'blog-post' ? true : false : false
   const previousLinkStatus = pageContext.previous ? pageContext.previous.frontmatter.templateKey === 'blog-post' ? true : false : false
 
-  const post = props.data.markdownRemark
-  const siteTitle = props.data.site.siteMetadata.title
-  const social = props.data.site.siteMetadata.social
+  const post = props.data.markdownRemark;
+  const siteTitle = props.data.site.siteMetadata.title;
+  const social = props.data.site.siteMetadata.social;
+  
   return (
     <Layout location={props.location} title={siteTitle} social={social}>
       <SEO
@@ -27,7 +28,7 @@ const BlogPostTemplate = (props) => {
         image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData.images.fallback.src || 'img/wsis-logo.png'}
       />
       <article
-        className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
+        className={`post-content ${post.frontmatter.thumbnail ? '' : 'no-image'}`}
       >
         <header className="post-content-header">
           <h1 className="post-content-title">{post.frontmatter.title}</h1>
@@ -38,11 +39,10 @@ const BlogPostTemplate = (props) => {
         {post.frontmatter.thumbnail && (
           <div className="post-content-image">
             <GatsbyImage
-              // image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
-              // className="kg-image"
               image={getImage(post.frontmatter.thumbnail)}
+              alt={post.frontmatter.title}
               className="kg-image"
-              alt={post.frontmatter.title} />
+            />
           </div>
         )}
         <div
@@ -70,7 +70,6 @@ const BlogPostTemplate = (props) => {
       </article>
     </Layout>
   );
-
 }
 
 export default BlogPostTemplate

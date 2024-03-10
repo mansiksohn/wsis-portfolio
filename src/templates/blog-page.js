@@ -1,15 +1,15 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
+import { getImage } from "gatsby-plugin-image";
 
-// eslint-disable-next-line
-const WorkPage = ({ data }) => {
+const BlogPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const social = data.site.siteMetadata.social
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges || [];
+  
   let postCounter = 0
 
   return (
@@ -17,8 +17,7 @@ const WorkPage = ({ data }) => {
       <SEO
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description || ''}
-        image={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid.src}
-
+        image={getImage(data.markdownRemark.frontmatter.thumbnail)}
       />
 
       {data.site.siteMetadata.description && (
@@ -44,50 +43,46 @@ const WorkPage = ({ data }) => {
     </Layout>
   )
 }
-export default WorkPage
-export const WorkPageQuery = graphql`
-query IndexPage {
-  site {
-    siteMetadata {
-      title
-      social{
-        twitter
-        facebook
+export default BlogPage
+export const BlogPageQuery = graphql`
+  query BlogPage {
+    site {
+      siteMetadata {
+        title
+        social {
+          twitter
+          facebook
+        }
       }
     }
-  }
-  markdownRemark(frontmatter: {templateKey: {eq: "blog-page"}}) {
-    frontmatter {
-      title
-      description
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
+    markdownRemark(frontmatter: {templateKey: {eq: "blog-page"}}) {
+      frontmatter {
+        title
+        description
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(width: 1360, layout: CONSTRAINED)
           }
         }
       }
     }
-    
-  }
-  allMarkdownRemark(
-    filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
-    limit: 30
-    sort: {frontmatter: {date: DESC}}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "YYYY-MM-DD")
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 1360) {
-                ...GatsbyImageSharpFluid
+    allMarkdownRemark(
+      filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+      limit: 30
+      sort: {frontmatter: {date: DESC}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "YYYY-MM-DD")
+            title
+            description
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 1360, layout: CONSTRAINED)
               }
             }
           }
@@ -95,5 +90,4 @@ query IndexPage {
       }
     }
   }
-}
-`;
+`

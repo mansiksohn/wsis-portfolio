@@ -18,15 +18,16 @@ const BlogPostTemplate = (props) => {
   const post = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
   const social = props.data.site.siteMetadata.social
+  const image = getImage(post.frontmatter.thumbnail);
   return (
     <Layout location={props.location} title={siteTitle} social={social}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData.images.fallback.src || 'img/wsis-logo.png'}
+        image={image ? image.images.fallback.src : 'img/wsis-logo.png'}
       />
       <article
-        className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
+        className={`post-content ${post.frontmatter.thumbnail ? 'with-image' : 'no-image'}`}
       >
         <header className="post-content-header">
           <h1 className="post-content-title">{post.frontmatter.title}</h1>
@@ -37,7 +38,7 @@ const BlogPostTemplate = (props) => {
         {post.frontmatter.thumbnail && (
           <div className="post-content-image">
             <GatsbyImage
-              image={getImage(post.frontmatter.thumbnail)}
+              image={image}
               className="kg-image"
               alt={post.frontmatter.title} />
           </div>

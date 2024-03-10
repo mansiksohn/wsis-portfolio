@@ -1,14 +1,17 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const WorkCard = props => {
+  const image = getImage(props.node.frontmatter.thumbnail);
+
   return (
     <article
       className={`work-card ${props.postClass} ${props.node.frontmatter.thumbnail ? 'with-image' : 'no-image'}`}
     >
-      {props.node.frontmatter.thumbnail && (
-        <img
-          src={props.node.frontmatter.thumbnail.childImageSharp.fluid.src}
+      {image && (
+        <GatsbyImage
+          image={image}
           alt={`${props.node.frontmatter.title} Thumbnail`} // 제목을 포함한 alt 텍스트
           className="work-card-image"
         />
