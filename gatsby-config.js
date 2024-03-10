@@ -134,7 +134,7 @@ module.exports = {
         short_name: siteConfig.shortName,
         start_url: siteConfig.prefix,
         background_color: `#ffffff`,
-        theme_color: `#4e0899`,
+        theme_color: `#ffffff`, //아이폰 상단에 표시되는 색 바꾸기 위해 변경
         display: `standalone`,
         icon: siteConfig.manifest_icon,
       },
