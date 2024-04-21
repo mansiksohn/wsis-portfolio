@@ -682,10 +682,12 @@ footer.site-foot a {
   margin: 0 auto !important;
 }
 
-.post-content-body blockquote {
-  margin: 0 0 1.5em;
-  padding: 0 1.5em;
-  border-left: #000 3px solid;
+.post-content-body blockquote:before {
+  content: "\275D";
+  font-size: 3em;
+  float: left;
+  color: var(--color-primary);
+  margin: -5px 10px 0px -10px;
 }
 
 .post-content-body blockquote p {
@@ -693,7 +695,6 @@ footer.site-foot a {
   color: inherit;
   font-size: inherit;
   line-height: inherit;
-  font-style: italic;
 }
 
 .post-content-body blockquote p:last-child {
