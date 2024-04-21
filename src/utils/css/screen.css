@@ -494,7 +494,7 @@ footer.site-foot a {
 }
 
 .work-card:hover .work-card-image img {
-  filter: blur(8px) grayscale(60%) brightness(50%); /* 호버 시 이미지를 흐리게 처리 */
+  filter: blur(8px) grayscale(00%) brightness(90%); /* 호버 시 이미지를 흐리게 처리 */
   transform: scale(1.03);
 }
 
@@ -521,7 +521,7 @@ footer.site-foot a {
   bottom: 0;
   left: 0;
   color: #fff;
-  background: var(--color-primary-highlighter);
+  text-shadow: 0px 0px 16px var(--color-base);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
