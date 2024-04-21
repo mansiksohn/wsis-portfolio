@@ -3,7 +3,7 @@ templateKey: work-post
 thumbnail: ./cover.png
 date: 2015-07-01
 title: Toyota AVN 음성인식 시스템 사용성 컨설팅
-description: "120명의 북미 사용자 대상 3개 차종 사용성 조사 및 벤치마킹"
+description: "2개 차종의 음성 시스템을 분석하고 IQS(Initial Quality Study, 초기품질지수) 점수 개선을 위한 제안"
 ---
 ```
 📅기간: 2015/07/01 ⭢ 2015/09/01
