@@ -1,7 +1,7 @@
 ---
 templateKey: work-post
 thumbnail: ./cover.png
-date: 2018-11-01
+date: 2018-11-02
 title: Honda 내비게이션 신규 플랫폼 사용성 평가(Step 3)
 description: "신규 어시스턴트 시스템과 캐릭터 애니메이션 적합성 연구"
 ---
