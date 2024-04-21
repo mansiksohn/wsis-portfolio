@@ -1,8 +1,8 @@
 ---
 templateKey: work-post
 thumbnail: ./cover.webp
-date: 2021-01-12
-title: MBUX 사용성 분석
+date: 2022-12-07
+title: 차량용 인포테인먼트의 제안 및 연결 기능 사용성 연구
 description: "벤츠 S-class 2021년 차량의 음성 어시스턴트 시스템에 대한 분석"
 ---
 ```
