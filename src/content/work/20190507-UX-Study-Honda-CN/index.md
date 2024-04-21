@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./UX-Study-Honda-Step3-001.png
+thumbnail: ./cover.png
 date: 2019-05-07
 title: Honda 신규 차량용 음성 시스템 중국 사용자 리서치
 description: "Honda 신규 차량용 음성 시스템 중국 사용자 리서치"

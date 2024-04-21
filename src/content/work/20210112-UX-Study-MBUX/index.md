@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: 
+thumbnail: ./cover.png
 date: 2021-01-12
 title: MBUX 사용성 분석
 description: "벤츠 S-class 2021년 차량의 음성 어시스턴트 시스템에 대한 분석"

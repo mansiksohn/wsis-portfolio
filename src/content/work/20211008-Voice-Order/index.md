@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20211008-Voice-Order.png
+thumbnail: ./cover.png
 date: 2021-10-08
 title: 전화 자동주문 AI 콜봇 프로젝트
 description: "전화로 접근하는 사람을 위한 AI 주문처리 서비스"

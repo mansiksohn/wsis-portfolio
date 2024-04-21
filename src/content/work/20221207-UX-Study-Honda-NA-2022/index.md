@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: 
+thumbnail: ./cover.webp
 date: 2021-01-12
 title: MBUX 사용성 분석
 description: "벤츠 S-class 2021년 차량의 음성 어시스턴트 시스템에 대한 분석"
@@ -45,12 +45,12 @@ description: "벤츠 S-class 2021년 차량의 음성 어시스턴트 시스템�
 - 전화를 걸거나 내비게이션 기능이 있는 캘린더 기능이 유용하다고 생각함
 
 ### 보고서 샘플
-![표지](UX-Study-Honda-NA-2022-001.jpg)
+![표지](./UX-Study-Honda-NA-2022-001.jpg)
 #### 테스트 환경 구성
-![alt text](UX-Study-Honda-NA-2022-002.jpg)
+![alt text](./UX-Study-Honda-NA-2022-002.jpg)
 #### 사용자 시나리오 분석
-![alt text](UX-Study-Honda-NA-2022-003.jpg)
+![alt text](./UX-Study-Honda-NA-2022-003.jpg)
 #### 지표와 인터뷰 분석
-![alt text](UX-Study-Honda-NA-2022-004.jpg)
+![alt text](./UX-Study-Honda-NA-2022-004.jpg)
 #### 인터뷰 시트
-![alt text](UX-Study-Honda-NA-2022-005.jpg)
+![alt text](./UX-Study-Honda-NA-2022-005.jpg)

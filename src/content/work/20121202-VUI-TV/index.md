@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20121202-VUI-TV.png
+thumbnail: ./cover.png
 date: 2012-12-01
 title: 음성 제어 스마트 TV UI Design
 description: "Remote controls, IoT devices 등을 만드는 UEI와 Voice Control Smart TV를 만들어 전시회에 출품"

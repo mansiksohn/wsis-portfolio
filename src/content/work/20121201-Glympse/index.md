@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20121201-Glympse.png
+thumbnail: ./cover.png
 date: 2012-12-01
 title: 차량 위치공유서비스 Glympse 앱의 음성인식 기능 적용 프로젝트
 description: "차량 위치공유서비스 Glympse 앱의 음성인식 기능 적용 프로젝트"

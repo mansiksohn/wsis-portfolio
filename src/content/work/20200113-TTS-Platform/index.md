@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20200113-TTS-Platform.png
+thumbnail: ./cover.png
 date: 2020-01-13
 title: 음성합성 신규 서비스 기획
 description: "타코트론 기반 음성합성 기술을 활용, 엔터테인먼트 관련 분야와 협업할 수 있는 사업 구상"

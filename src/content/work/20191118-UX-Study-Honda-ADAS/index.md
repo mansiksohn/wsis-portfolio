@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./UX-Study-Honda-NA-001.png
+thumbnail: ./cover.png
 date: 2019-11-18
 title: Honda 북미 신규 ADAS 시스템 음성안내 사용성 평가
 description: "ADAS 시스템을 설명하는 대화형 인터랙티브 메뉴얼의 효용성과 편의성 조사"

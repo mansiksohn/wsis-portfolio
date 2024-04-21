@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20200630-Voice-Kiosk.png
+thumbnail: ./cover.png
 date: 2020-06-30
 title: 음성주문 키오스크
 description: "북미의 디스플레이 제공 업체와 드라이브스루 매장을 타겟으로 음성 주문 시스템을 개발"

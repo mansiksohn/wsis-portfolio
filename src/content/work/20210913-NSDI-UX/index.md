@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20210913-NSDI-UX.png
+thumbnail: ./cover.png
 date: 2021-10-08
 title: 공간정보 포털 UI/UX 개편
 description: "공간정보 포털 시스템 고도화 및 기능개선"

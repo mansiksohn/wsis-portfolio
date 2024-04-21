@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20210203-Cloud-Partners.png
+thumbnail: ./cover.png
 date: 2021-02-03
 title: Cloud Partners
 description: "음성인식 키오스크문제를 해결하면서 확장 가능한 서비스 구상"

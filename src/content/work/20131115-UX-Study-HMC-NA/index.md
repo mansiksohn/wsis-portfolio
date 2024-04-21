@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./UX-Study-NA-001.png
+thumbnail: ./cover.png
 date: 2013-11-15
 title: 현대자동차 북미 음성인식 사용자 조사 및 벤치마킹
 description: "120명의 북미 사용자 대상 3개 차종 사용성 조사 및 벤치마킹"

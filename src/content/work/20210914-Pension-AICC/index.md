@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./cover-20210914-Pension-AICC.png
+thumbnail: ./cover.png
 date: 2021-09-13
 title: 신한은행 퇴직연금 음성봇
 description: "연금 문의 콜센터를 AI로 대체"

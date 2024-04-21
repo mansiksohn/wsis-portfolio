@@ -1,6 +1,6 @@
 ---
 templateKey: work-post
-thumbnail: ./UX-Study-Honda-Step1-001.png
+thumbnail: ./cover.png
 date: 2015-07-01
 title: Honda 내비게이션 신규 플랫폼 사용성 조사(Step 1)
 description: "신규 어시스턴트 시스템과 캐릭터 애니메이션 적합성 연구"
