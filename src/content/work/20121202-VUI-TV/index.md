@@ -1,12 +1,12 @@
 ---
 templateKey: work-post
 thumbnail: ./cover.png
-date: 2012-12-01
+date: 2012-12-02
 title: 음성 제어 스마트 TV UI Design
 description: "Remote controls, IoT devices 등을 만드는 UEI와 Voice Control Smart TV를 만들어 전시회에 출품"
 ---
 ```
-📅기간: 2012/12/01 ⭢ 2013/02/01
+📅기간: 2012/12/02 ⭢ 2013/02/01
 🤝고객: Universal Electronics
 🖥️업무: UI 디자인
 🎯기여도: 40%
