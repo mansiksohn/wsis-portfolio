@@ -2,7 +2,7 @@
 templateKey: work-post
 thumbnail: ./cover.png
 date: 2023-02-01
-title: AI 어린이 영어쉐도잉 앱 개발
+title: AI 어린이 영어쉐도잉 서비스 개발
 description: "AI 발음평가 기술을 활용하여 도서관과 함께 온-오프라인 믹스로 진행되는 영어교육앱 기획 및 디자인"
 ---
 ```
