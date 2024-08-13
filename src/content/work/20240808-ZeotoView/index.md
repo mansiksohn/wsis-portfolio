@@ -28,5 +28,5 @@ ZoetroView는 PC에서 마우스 스크롤로 유튜브 영상을 빠르게 훑�
 
 <a href="https://www.producthunt.com/posts/zoetroview?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-zoetroview" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=477540&theme=light" alt="zoetroView - Scroll&#0032;through&#0032;YouTube&#0032;videos&#0032;like&#0032;a&#0032;blog&#0032;post | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-
+<a href="https://www.producthunt.com/posts/zoetroview?embed=true&utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-zoetroview" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=477540&theme=light&period=weekly&topic_id=93" alt="zoetroView - Scroll&#0032;through&#0032;YouTube&#0032;videos&#0032;like&#0032;a&#0032;blog&#0032;post | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
