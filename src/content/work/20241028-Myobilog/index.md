@@ -3,7 +3,7 @@ templateKey: work-post
 thumbnail: ./cover.png
 date: 2024-10-28
 title: 묘비로그
-description: "마우스 스크롤로 빠르게 유튜브 동영상을 훑어볼 수 있는 뷰어"
+description: "내 묘비를 만들고 공유할 수 있는 앱"
 ---
 ```
 📅기간: 2024/07/24 ⭢ 2024/08/04
